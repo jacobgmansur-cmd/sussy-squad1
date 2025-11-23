@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sussy Squad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", sans-serif;
+      background: #020617;
+      color: #e5e7eb;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1100px;
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    header { text-align: center; margin-bottom: 2.5rem; }
+    header h1 {
+      font-size: clamp(2rem, 6vw, 3.4rem);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #22c55e, #eab308, #f97316, #ec4899, #6366f1);
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 0.3rem;
+    }
+    header p { color: #9ca3af; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .person-card {
+      background: radial-gradient(circle at top left, #111827, #020617);
+      border-radius: 1rem;
+      padding: 1.25rem;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+      text-align: center;
+      transition: 150ms ease;
+      cursor: pointer;
+    }
+
+    .person-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 50px rgba(15, 23, 42, 1);
+      border-color: #22c55e;
+    }
+
+    .person-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 3px solid rgba(148, 163, 184, 0.7);
+      margin-bottom: 0.85rem;
+    }
+
+    .person-name { font-weight: 700; font-size: 1.05rem; }
+    .person-tag {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #22c55e;
+      margin-bottom: 0.5rem;
+    }
+    .person-desc { font-size: 0.9rem; color: #d1d5db; }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header>
+      <h1>Sussy Squad</h1>
+      <p>One groupchat. 14 menaces. Unlimited chaos.</p>
+    </header>
+
+    <section class="gallery">
+
+      <!-- Aiden (Aids) -->
+      <a href="profiles/aids.html">
+        <article class="person-card">
+          <img src="images/aids.png" class="person-photo">
+          <div class="person-name">Aiden</div>
+          <div class="person-tag">“Aids”</div>
+          <p class="person-desc">Ladd McConkey</p>
+        </article>
+      </a>
+
+      <!-- Alex D (Xan) -->
+      <a href="profiles/xan.html">
+        <article class="person-card">
+          <img src="images/xan.png" class="person-photo">
+          <div class="person-name">Alex D</div>
+          <div class="person-tag">“Xan”</div>
+          <p class="person-desc">Gremlin energy. Nighttime menace.</p>
+        </article>
+      </a>
+
+      <!-- Alex E (Chimpy) -->
+      <a href="profiles/chimpy.html">
+        <article class="person-card">
+          <img src="images/chimpy.png" class="person-photo">
+          <div class="person-name">Alex E</div>
+          <div class="person-tag">“Chimpy”</div>
+          <p class="person-desc">Monkey brain but somehow clutch.</p>
+        </article>
+      </a>
+
+      <!-- Alessandro (Cube) -->
+      <a href="profiles/cube.html">
+        <article class="person-card">
+          <img src="images/cube.png" class="person-photo">
+          <div class="person-name">Alessandro</div>
+          <div class="person-tag">“Cube”</div>
+          <p class="person-desc">Appears, drops cursed message, vanishes. Loves to eat.</p>
+        </article>
+      </a>
+
+      <!-- Braeden (Psy) -->
+      <a href="profiles/psy.html">
+        <article class="person-card">
+          <img src="images/psy.png" class="person-photo">
+          <div class="person-name">Braeden</div>
+          <div class="person-tag">“Psy”</div>
+          <p class="person-desc">Genius or menace — depends on the day.</p>
+        </article>
+      </a>
+
+      <!-- Christian (Aptsboy) -->
+      <a href="profiles/aptsboy.html">
+        <article class="person-card">
+          <img src="images/aptsboy.png" class="person-photo">
+          <div class="person-name">Christian</div>
+          <div class="person-tag">“Aptsboy”</div>
+          <p class="person-desc">D1 Commit</p>
+        </article>
+      </a>
+
+      <!-- Devesh (Washie) -->
+      <a href="profiles/washie.html">
+        <article class="person-card">
+          <img src="images/washie.png" class="person-photo">
+          <div class="person-name">Devesh</div>
+          <div class="person-tag">“Washie”</div>
+          <p class="person-desc">Responsible and chaotic at the same time.</p>
+        </article>
+      </a>
+
+      <!-- Jacob (Jake) -->
+      <a href="profiles/jake.html">
+        <article class="person-card">
+          <img src="images/jake.png" class="person-photo">
+          <div class="person-name">Jacob</div>
+          <div class="person-tag">“Jake”</div>
+          <p class="person-desc">Biggest Muscles</p>
+        </article>
+      </a>
+
+      <!-- Josiah (Juicy) -->
+      <a href="profiles/juicy.html">
+        <article class="person-card">
+          <img src="images/juicy.png" class="person-photo">
+          <div class="person-name">Josiah</div>
+          <div class="person-tag">“Juicy”</div>
+          <p class="person-desc">Drama supplier. Lore generator.</p>
+        </article>
+      </a>
+
+      <!-- Kaden (Asia) -->
+      <a href="profiles/asia.html">
+        <article class="person-card">
+          <img src="images/asia.png" class="person-photo">
+          <div class="person-name">Kaden</div>
+          <div class="person-tag">“Asia”</div>
+          <p class="person-desc">Returns with 47 messages every time.</p>
+        </article>
+      </a>
+
+      <!-- Lachlan (Locky) -->
+      <a href="profiles/locky.html">
+        <article class="person-card">
+          <img src="images/locky.png" class="person-photo">
+          <div class="person-name">Lachlan</div>
+          <div class="person-tag">“Locky”</div>
+          <p class="person-desc">Sussy Squad gloabal coverage</p>
+        </article>
+      </a>
+
+      <!-- Shikhar (Shikie) -->
+      <a href="profiles/shikie.html">
+        <article class="person-card">
+          <img src="images/shikie.png" class="person-photo">
+          <div class="person-name">Shikhar</div>
+          <div class="person-tag">“Shikie”</div>
+          <p class="person-desc">Typing… chaos loading.</p>
+        </article>
+      </a>
+
+      <!-- Tea (Asia 2) -->
+      <a href="profiles/asia2.html">
+        <article class="person-card">
+          <img src="images/asia2.png" class="person-photo">
+          <div class="person-name">Tea</div>
+          <div class="person-tag">“Asia 2”</div>
+          <p class="person-desc">Backup menace with sequel energy.</p>
+        </article>
+      </a>
+
+      <!-- Tyler (D92) -->
+      <a href="profiles/d92.html">
+        <article class="person-card">
+          <img src="images/d92.png" class="person-photo">
+          <div class="person-name">Tyler</div>
+          <div class="person-tag">“D92”</div>
+          <p class="person-desc">Random facts at 2AM included free.</p>
+        </article>
+      </a>
+
+    </section>
+
+    <footer>
+      Made with ❤️ by Sussy Squad.
+    </footer>
+  </main>
+</body>
+</html>
